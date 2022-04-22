@@ -22,24 +22,26 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             tools:ignore="UseCompoundDrawables">
+
             <LinearLayout
 
-                android:gravity="center"
                 android:id="@+id/layout_avatar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:orientation="horizontal">
-            <ImageView
-                android:id="@+id/img_item"
-                android:layout_marginLeft="10dp"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentLeft="true"
-                android:layout_gravity="center"
                 android:gravity="center"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/round_tick" />
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_item"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="center"
+                    android:src="@drawable/round_tick" />
 
                 <TextView
                     android:id="@+id/tv_item_name"
@@ -61,18 +63,37 @@
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold"
-
                     tools:text="item" />
-            </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_item_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="item" />
 
-            <Button
-                android:id="@+id/Delete"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:id="@+id/layout_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_gravity="center"
-                android:background="@drawable/multiply"
-                 />
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Delete"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorAccent"
+                    app:icon="@android:drawable/ic_delete"
+                    android:textColor="#FFF" />
+
+        </LinearLayout>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 

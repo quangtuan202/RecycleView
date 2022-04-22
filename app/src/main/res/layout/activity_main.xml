@@ -27,6 +27,12 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:hint="Age" />
+    <EditText
+        android:id="@+id/text_view_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textLongMessage"
+        android:hint="Job" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/Add"
